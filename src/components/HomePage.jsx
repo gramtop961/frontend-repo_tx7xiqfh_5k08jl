@@ -6,16 +6,16 @@ import Spline from '@splinetool/react-spline';
 export default function HomePage({ goToContact }) {
   return (
     <main>
-      {/* Hero with Spline animation */}
+      {/* Hero with Spline animation (cover background) */}
       <section className="relative h-[560px] md:h-[640px] overflow-hidden">
         <div className="absolute inset-0">
           <Spline
-            scene="https://prod.spline.design/igThmltzmqv5hkWo/scene.splinecode"
+            scene="https://prod.spline.design/zhZFnwyOYLgqlLWk/scene.splinecode"
             style={{ width: '100%', height: '100%' }}
           />
         </div>
-        {/* Contrast gradient overlay that does not block interaction */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/70 to-white" />
+        {/* Contrast overlay that does not block interaction */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white" />
 
         <div className="relative h-full">
           <div className="mx-auto max-w-6xl h-full px-4 flex items-center">
@@ -40,7 +40,7 @@ export default function HomePage({ goToContact }) {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                className="mt-6 text-slate-700 text-lg leading-relaxed bg-white/80 p-4 rounded-md shadow-sm"
+                className="mt-6 text-slate-700 text-lg leading-relaxed bg-white/85 p-4 rounded-md shadow-sm"
               >
                 SEC Ticket Sales helps you save on domestic & international flights. We source advance-purchase & wholesale airline fares, meaning cheaper tickets than major booking websites. Safe, secure, verified flight deals.
               </motion.p>
@@ -66,7 +66,7 @@ export default function HomePage({ goToContact }) {
                     <Plane className="h-4 w-4 text-[#2EB6E8]" />
                   </motion.span>
                 </button>
-                <div className="flex items-center gap-2 text-sm text-[#0A1C3F] bg-white/80 px-3 py-2 rounded">
+                <div className="flex items-center gap-2 text-sm text-[#0A1C3F] bg-white/85 px-3 py-2 rounded">
                   <Shield className="h-4 w-4 text-[#2EB6E8]" />
                   Trusted, secure deals
                 </div>
